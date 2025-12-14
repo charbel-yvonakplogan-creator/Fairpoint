@@ -1,0 +1,23 @@
+{
+    "name": "tonnom/faircount",
+    "description": "Projet FairCount - gestion de dépenses entre amis",
+    "type": "project",
+    "require": {
+        "php": ">=8.1",
+        "vlucas/phpdotenv": "^5.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Controllers\\": "controllers/",
+            "Managers\\": "managers/",
+            "Models\\": "models/",
+            "Services\\": "services/"
+        }
+    },
+    "config": {
+        "optimize-autoloader": true
+    },
+    "scripts": {
+        "start": "php -S localhost:8000 -t public"
+    }
+}
